@@ -2,6 +2,9 @@ let inputFields = document.querySelectorAll('.input-value input')
 let rangeFields = document.querySelectorAll('.range-value input')
 let progress = document.querySelector('.progress')
 let priceGap = 1000
+
+
+
 function rangeInputVal(e) {
     e.preventDefault();
     let minValue = +(rangeFields[0].value);  
@@ -23,6 +26,9 @@ function rangeInputVal(e) {
 }
 
 rangeFields.forEach(inp => inp.addEventListener('input', rangeInputVal))
+
+
+
 
 function inputNumber(e) {
     e.preventDefault();
