@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: dodgerblue;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+  width: 45em;
+}
+
+.wrapper > h1 {
+  font-size: 2.5em;
+  margin: 10px 0px 5px 0px;
+}
+
+.wrapper > .info-txt {
+  font-size: 1.4em;
+}
+
+.wrapper > .input-value {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.wrapper > .input-value .contain-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.wrapper > .input-value .contain-input label {
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+
+.wrapper > .input-value .contain-input .seperator {
+  margin: 0px 10px;
+}
+
+.wrapper > .input-value .contain-input input {
+  font-size: 1.5em;
+  padding: 5px 10px;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  border: 2px solid #ccc9;
+}
+
+.wrapper > .input-value .contain-input input[type="number"]::-webkit-outer-spin-button, .wrapper > .input-value .contain-input input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.wrapper > .input-value .contain-input input:focus, .wrapper > .input-value .contain-input input:hover {
+  border-color: #0009;
+}
+
+.wrapper > .range-value {
+  height: 5px;
+  width: 100%;
+  background-color: #ccc9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.wrapper > .range-value > input {
+  width: calc(100% + 10px);
+  position: absolute;
+  -webkit-appearance: none;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.wrapper > .range-value > input[type="range"]::-webkit-slider-thumb {
+  pointer-events: auto;
+  width: 15px;
+  -webkit-appearance: none;
+  height: 15px;
+  background-color: dodgerblue;
+  border-radius: 10px;
+}
+
+.wrapper > .range-value > .progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  right: 25%;
+  background-color: dodgerblue;
+}
+/*# sourceMappingURL=main.css.map */
